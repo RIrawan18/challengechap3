@@ -1,0 +1,249 @@
+#background1{
+    background-image: url('../assets/main-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+#game{
+    background-image: url('../assets/the-games-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+} 
+
+#features{
+    background-image: url('../assets/features.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    box-shadow: 0px 0px 100px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.pointgame{
+    list-style-type: none;
+}
+
+.gamelist:before{
+    content: '';
+    background: white;
+    width: 2px;
+    height: 106px;
+    position: absolute;
+    left: 19.5px;
+}
+
+.pointgame > h4{
+    color: goldenrod;
+}
+
+
+.pointgame.active:before{
+    content: '';
+    background-image: url('../assets/ellipse.svg');
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 12px;
+}
+
+.pointgame.inactive:before{
+    content: '';
+    background-image: url('../assets/ellipse-outline.svg');
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 12px;
+}
+
+#requirements{
+    background-image: url('../assets/requirements.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    box-shadow: 0px 0px 100px 50px rgba(0, 0, 0, 0.7) inset;
+    display: flex;
+    align-items: center;
+}
+
+h5{
+    color: rgb(255, 166, 0);
+}
+
+#MainTable {
+    width: 100%;
+    background-color: #D8F0DA;
+    border: 0.1px;
+    min-width: 100%;
+    position: relative;
+    background: transparent;
+}
+
+.teks{
+text-align:center; font-family:Arial;
+}
+
+#top-score{
+    background-image: url('../assets/top-score-bg.png');
+    background-size: cover;
+    height: 100vh;
+    box-shadow: 0px 0px 100px 50px rgba(0, 0, 0, 0.7) inset;
+    display: flex;
+    align-items: center;
+}
+
+.profile{
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 10px;
+    box-shadow: 5px 5px 5px #ffb548;
+}
+
+.card{
+    background-color: #222222;
+    border-radius: .75rem;;
+}
+
+.card-title{
+    color: #ffb548;
+}
+
+.card-body h5, .card-body h6 {
+    display: inline;
+}
+
+.card-body h6 {
+    position: relative;
+    top: 25px;
+    left: -95px;
+}
+
+.card-twitter {
+    background-image: url('../assets/twitter-card.png');
+    background-color: #eee;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+}
+
+@media (min-width: 786px) {
+    .card-middle {
+        position: relative;
+        left: -75px;
+    }
+}
+#newsletter{
+    background-image: url('../assets/newsletter.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    box-shadow: 0px 0px 100px 50px rgba(0, 0, 0, 0,5);
+}
+
+section.subscribe{
+    background-image: url('../assets/newsletter.png');
+}
+
+section.subscribe .container-fluid{
+    height: 100vh;
+}
+
+.subscribe h3{
+    letter-spacing: 4px;
+}
+
+.subscribe h1{
+    letter-spacing: 16px;
+}
+
+.subscribe .my-hero-image{
+    position: relative;
+    left: 5%;
+}
+
+.subscribe .text-area{
+    width: 50%;
+    z-index: 1;
+    margin-left: 10%;
+}
+
+.mail{
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 2px 70px;
+    margin-right: 1%;
+    margin-bottom: 2%;
+}
+.subs{
+    background-color: #ffb548;
+    padding: 16px 40px;
+    margin-bottom: 2%;
+}
+
+
+.subscribe footer .menu .nav li a{
+    color: white;
+    margin: 0 0.5rem;
+}
+
+.subscribe footer .menu .nav li:nth-child(5){
+    margin-right: 20px;
+}
+
+.subscribe footer .menu .nav li:last-child{
+    margin-right: 0;
+}
+
+.copyright{
+    border-top: 1px solid white;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 500px){
+    .subscribe h3{
+        letter-spacing: 2px;
+    }
+    .subscribe h1{
+        letter-spacing: 4px;
+    }
+    .subscribe .text-area{
+        width: 80%;
+        position: absolute;
+        left: -20%;
+    }
+    .mail{
+        padding: 2px 40px;
+    }
+    .subs{
+        padding: 16px 40px;
+    }
+}
+@media (max-width: 380px){
+    .subscribe{
+        height: 100%;
+    }
+    section.subscribe .container-fluid{
+        height: 100%;
+    }
+    .subscribe .container-lg{
+        margin: 3rem;
+    }
+    .subscribe .text-area{
+        width: 80%;
+        position: relative;
+        left: -25%;
+    }
+    .subscribe h1{
+        font-size: 40px;
+    }
+    .mail{
+        padding: 2px 15px;
+    }
+    .subs{
+        padding: 8px 10px;
+    }
+}
