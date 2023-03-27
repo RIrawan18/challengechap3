@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Play Games</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/gameStyle.css">
+</head>
+<body style="background-color: rgb(137, 109, 73);">
+    
+    <section id="header">
+        <div class="container">
+            <nav id="navbar" class="d-flex align-items-center"> <!--cari tau nav-default itu apa-->
+                <a href="./index.html">
+                    <p class="backButton">< &nbsp;</p>
+                </a> 
+                <img class="img-fluid" src="assetsGame/logo.png" width="50" height="50" alt="">
+                <h2>ROCK PAPER SCISSORS</h2>
+            </nav>
+        </div>
+    </section>
+
+<br> <br> <br>
+
+    <section id="game">
+        <div class="container">
+            <div class="row text-center click">
+              <div class="d-flex align-items-center col-md-5 flex-column">
+                <h2>PLAYER</h2>
+                <div id="user">
+                  <button class="choice choice-rock" type="button" data-choice="rock">
+                    <img class="pilihan" src="assetsGame/batu.png" alt="">
+                  </button>
+                  <button class="choice choice-paper" type="button" data-choice="paper">
+                    <img class="pilihan" src="assetsGame/kertas.png" alt="">
+                  </button>
+                  <button class="choice choice-scissor" type="button" data-choice="scissor">
+                    <img class="pilihan" src="assetsGame/gunting.png" alt="">
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex text-center justify-content-end col-md-2 flex-column ">
+                <div id="result">
+                  <div id="vs">
+                    <p>VS</p>
+                  </div>
+                  <div id="computerWin" class="box">Computer Wins</div>
+                  <div id="userWin" class="box">Player Wins</div>
+                  <div id="draw" class="box">Draw</div>
+                </div>
+                <button id="resetButton">
+                  <img class="reset" src="assetsGame/refresh.png" alt="">
+                </button>
+              </div>
+              <div class="col-md-5 d-flex flex-column align-items-center">
+                <h2>COM</h2>
+                <div id="computer">
+                  <button class="choice choice-rock" type="button" data-choice="rock" disabled>
+                    <img class="pilihan" src="assetsGame/batu.png" alt="">
+                  </button>
+                  <button class="choice choice-rock" type="button" data-choice="paper" disabled>
+                    <img class="pilihan" src="assetsGame/kertas.png" alt="">
+                  </button>
+                  <button class="choice choice-rock" type="button" data-choice="scissor" disabled>
+                    <img class="pilihan" src="assetsGame/gunting.png" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+
+</body>
+</html>
